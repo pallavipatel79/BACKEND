@@ -11,7 +11,9 @@ const asyncHandler = (requestHandler) => {
 export {asyncHandler}
 
 // const asyncHandler = () => {}
-// const asyncHandler = (func) => () => {}
+// const asyncHandler = (func) => () => {} -----
+//                                             | same 
+// const asyncHandler = (func) => {() => {}}<---
 // const asyncHandler = (func) => async () => {}
 
 // const asyncHandler = (fn) => async(req, res, next) => {
@@ -19,7 +21,7 @@ export {asyncHandler}
 //         await fn(req, res, next)
 //     }
 //     catch(Err){
-//         res.status(err.code || 500).jason({
+//         res.status(err.code || 500).json({
 //             success: false,
 //             message: err.message
 //         })
