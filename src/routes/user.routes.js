@@ -7,14 +7,15 @@ router.route('/register').post(
     upload.fields([
         {
             name: 'avatar',
-            maxcount: 1
+            maxCount: 1
         },
         {
             name: 'coverImage',
-            maxcount: 1
+            maxCount: 1
         }
     ]),
-    registerUser)
+    registerUser
+)
 //http://localhost:5000/users/register
 
 export default router;
