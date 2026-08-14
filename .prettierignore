@@ -1,5 +1,5 @@
-/.vdcode
-/node_models
+/.vscode
+/node_modules
 ./dist
 
 *.env
