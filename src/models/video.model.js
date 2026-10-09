@@ -37,6 +37,6 @@ const videoSchema = new Schema({
 
 },{timeStamps: true})
 
-videoSchema.plugin(mongooseAggregatePaginate)
+videoSchema.plugin(mongooseAggregatePaginate)// this is used to paginate the videos when we fetch them from the database
 
 export const Video = mongoose.model("Video",videoSchema)
